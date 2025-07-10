@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+div {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 6rem;
+}
+
+.first {
+  background-color: white;
+}
+.second {
+  background-color: green;
+}
+.third {
+  background-color: yellow;
+}
+.fourth {
+  background-color: pink;
+}
+.fifth {
+  background-color: blue;
+}
