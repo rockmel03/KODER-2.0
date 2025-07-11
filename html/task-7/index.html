@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+
+    .marquee > div {
+      animation: marquee 20s linear infinite;
+    }
+
+    .marquee:hover > div {
+      cursor: pointer;
+      animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translate(calc(-100% - 1px));
+      }
+    }
+  </style>
+  <body>
+    <main>
+      <section class="relative w-full h-screen">
+        <nav
+          class="absolute z-50 top-0 w-full py-2 px-5 bg-[#2C2A25] text-white"
+        >
+          <div
+            class="max-w-screen-xl mx-auto w-full h-full flex items-center justify-between"
+          >
+            <h2
+              class="grid grid-cols-2 w-12 h-12 text-xl font-semibold leading-none"
+            >
+              <div class="leading-none grid place-items-center">M</div>
+              <div class="leading-none grid place-items-center">E</div>
+              <div class="leading-none grid place-items-center">V</div>
+              <div class="leading-none grid place-items-center">E</div>
+            </h2>
+
+            <div class="flex items-center gap-20">
+              <a href="$">Shop</a>
+              <a href="#">About Us</a>
+              <a href="#">Contact</a>
+            </div>
+
+            <div>
+              <svg
+                class="w-8 h-8"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </nav>
+        <div class="w-full h-full">
+          <div class="absolute w-full h-full">
+            <img
+              src="./bg.png"
+              alt=""
+              class="w-full h-full object-cover object-center"
+            />
+          </div>
+          <div class="relative z-[1] w-full h-full bg-zinc-900/30 text-white">
+            <div
+              class="max-w-screen-xl mx-auto w-full h-full flex items-center justify-center"
+            >
+              <h1 class="text-7xl font-semibold uppercase tracking-[10px]">
+                MEBELEVV
+              </h1>
+              <button class="absolute bottom-10 animate-bounce">
+                <svg
+                  class="w-12 h-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 15.6315L20.9679 10.8838L20.0321 9.11619L12 13.3685L3.9679 9.11619L3.03212 10.8838L12 15.6315Z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="max-w-screen-xl mx-auto py-10">
+          <h2 class="text-4xl font-semibold">Products</h2>
+        </div>
+
+        <div class="marquee flex overflow-hidden">
+          <div class="flex-shrink-0 gap-2 flex flex-nowrap">
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Bed</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1565791380713-1756b9a05343?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Table</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Sofa</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Chair</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1699367797214-e2f1c5d7df2a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Almirah</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1683141318297-75a3d8e86476?q=80&w=782&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Drawer</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1678652879069-816b85e71e3f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Stand</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 gap-2 flex flex-nowrap">
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Bed</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1565791380713-1756b9a05343?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Table</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Sofa</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1501045661006-fcebe0257c3f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Chair</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://images.unsplash.com/photo-1699367797214-e2f1c5d7df2a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Almirah</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1683141318297-75a3d8e86476?q=80&w=782&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Drawer</p>
+            </div>
+            <div class="flex-shrink-0 max-w-96 p-4">
+              <div class="w-full aspect-square">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1678652879069-816b85e71e3f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <p class="mt-4 text-xl font-medium">Stand</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full bg-[#FBF5F1]">
+        <div
+          class="max-w-screen-xl mx-auto w-full h-full py-20 px-5 flex items-center justify-between"
+        >
+          <div class="w-[50%] space-y-10">
+            <h2 class="text-3xl font-medium">
+              Random Heading 5 <span class="text-red-900"> Bonopocob</span>
+              <br />
+              and Lorem ipsum
+            </h2>
+            <p class="w-[70%] text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis cumque ipsam sapiente aperiam nam aliquam quasi fuga
+              hic nesciunt commodi.
+            </p>
+            <button
+              class="px-5 py-2 text-base font-semibold bg-[#2C2A25] text-white rounded-lg"
+            >
+              Explore Now
+            </button>
+          </div>
+
+          <div class="relative w-[50%] aspect-4/3">
+            <img
+              src="./context-img.png"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute top-0 w-full h-full bg-zinc-500/30"></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-screen-xl mx-auto w-full h-full py-20">
+          <h2 class="text-3xl font-medium">
+            Random Heading 5 Bonopocob and Lorem ipsum
+          </h2>
+          <div class="mt-10">
+            <article class="p-2 border-b group">
+              <dt class="w-full flex items-center justify-between p-2">
+                <p class="text-xl font-semibold">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae, dolorum!
+                </p>
+                <div
+                  class="grid place-items-center bg-[#FBF5F1] p-1 rounded-full rotate-45"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+                  </svg>
+                </div>
+              </dt>
+              <dd
+                class="px-2 py-5 w-[80%] opacity-80 transition ease duration-200"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                voluptatem odit veritatis quisquam ipsa, aliquid cupiditate
+                consequuntur, earum commodi, quos vel autem recusandae omnis
+                obcaecati dignissimos consequatur? Eos, quasi repellat illum
+                laboriosam id molestias distinctio omnis quo totam iure ab
+                blanditiis harum corrupti aperiam, dicta doloribus sunt
+                quibusdam eum magnam. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Laboriosam modi dolore blanditiis voluptates
+                quo nulla doloribus sequi ipsam, rerum assumenda dolorem
+                voluptatem accusamus nostrum. Quisquam nam accusantium
+                voluptates deserunt! Odio!
+              </dd>
+            </article>
+            <article class="p-2 border-b group">
+              <dt class="w-full flex items-center justify-between p-2">
+                <p class="text-xl font-semibold">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae, dolorum!
+                </p>
+                <div
+                  class="grid place-items-center bg-[#FBF5F1] p-1 rounded-full"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+                  </svg>
+                </div>
+              </dt>
+              <dd
+                class="px-2 py-5 w-[80%] opacity-80 hidden transition ease duration-200"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                voluptatem odit veritatis quisquam ipsa, aliquid cupiditate
+                consequuntur, earum commodi, quos vel autem recusandae omnis
+                obcaecati dignissimos consequatur? Eos, quasi repellat illum
+                laboriosam id molestias distinctio omnis quo totam iure ab
+                blanditiis harum corrupti aperiam, dicta doloribus sunt
+                quibusdam eum magnam. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Laboriosam modi dolore blanditiis voluptates
+                quo nulla doloribus sequi ipsam, rerum assumenda dolorem
+                voluptatem accusamus nostrum. Quisquam nam accusantium
+                voluptates deserunt! Odio!
+              </dd>
+            </article>
+            <article class="p-2 border-b group">
+              <dt class="w-full flex items-center justify-between p-2">
+                <p class="text-xl font-semibold">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae, dolorum!
+                </p>
+                <div
+                  class="grid place-items-center bg-[#FBF5F1] p-1 rounded-full"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+                  </svg>
+                </div>
+              </dt>
+              <dd
+                class="px-2 py-5 w-[80%] opacity-80 hidden transition ease duration-200"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                voluptatem odit veritatis quisquam ipsa, aliquid cupiditate
+                consequuntur, earum commodi, quos vel autem recusandae omnis
+                obcaecati dignissimos consequatur? Eos, quasi repellat illum
+                laboriosam id molestias distinctio omnis quo totam iure ab
+                blanditiis harum corrupti aperiam, dicta doloribus sunt
+                quibusdam eum magnam. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Laboriosam modi dolore blanditiis voluptates
+                quo nulla doloribus sequi ipsam, rerum assumenda dolorem
+                voluptatem accusamus nostrum. Quisquam nam accusantium
+                voluptates deserunt! Odio!
+              </dd>
+            </article>
+            <article class="p-2 border-b group">
+              <dt class="w-full flex items-center justify-between p-2">
+                <p class="text-xl font-semibold">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae, dolorum!
+                </p>
+                <div
+                  class="grid place-items-center bg-[#FBF5F1] p-1 rounded-full"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+                  </svg>
+                </div>
+              </dt>
+              <dd
+                class="px-2 py-5 w-[80%] opacity-80 hidden transition ease duration-200"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                voluptatem odit veritatis quisquam ipsa, aliquid cupiditate
+                consequuntur, earum commodi, quos vel autem recusandae omnis
+                obcaecati dignissimos consequatur? Eos, quasi repellat illum
+                laboriosam id molestias distinctio omnis quo totam iure ab
+                blanditiis harum corrupti aperiam, dicta doloribus sunt
+                quibusdam eum magnam. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Laboriosam modi dolore blanditiis voluptates
+                quo nulla doloribus sequi ipsam, rerum assumenda dolorem
+                voluptatem accusamus nostrum. Quisquam nam accusantium
+                voluptates deserunt! Odio!
+              </dd>
+            </article>
+            <article class="p-2 border-b group">
+              <dt class="w-full flex items-center justify-between p-2">
+                <p class="text-xl font-semibold">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Recusandae, dolorum!
+                </p>
+                <div
+                  class="grid place-items-center bg-[#FBF5F1] p-1 rounded-full"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path>
+                  </svg>
+                </div>
+              </dt>
+              <dd
+                class="px-2 py-5 w-[80%] opacity-80 hidden transition ease duration-200"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum
+                voluptatem odit veritatis quisquam ipsa, aliquid cupiditate
+                consequuntur, earum commodi, quos vel autem recusandae omnis
+                obcaecati dignissimos consequatur? Eos, quasi repellat illum
+                laboriosam id molestias distinctio omnis quo totam iure ab
+                blanditiis harum corrupti aperiam, dicta doloribus sunt
+                quibusdam eum magnam. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Laboriosam modi dolore blanditiis voluptates
+                quo nulla doloribus sequi ipsam, rerum assumenda dolorem
+                voluptatem accusamus nostrum. Quisquam nam accusantium
+                voluptates deserunt! Odio!
+              </dd>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-[#736156] text-white">
+        <div class="max-w-screen-xl mx-auto px-5">
+          <div class="flex gap-4 justify-between py-10 pt-20">
+            <div class="w-[60%]">
+              <div>
+                <h3>MEBELEVV</h3>
+                <h2 class="text-xl font-semibold">HAWN KOTHAKTbI</h2>
+              </div>
+
+              <div class="mt-10 flex gap-2 justify-between">
+                <div>
+                  <h5 class="font-medium mb-2">Support</h5>
+                  <div>0 (800) 555-3-35</div>
+                  <div>mebelevv@mail.ru</div>
+                </div>
+                <div>
+                  <h5 class="font-medium mb-2">Follow us</h5>
+                  <div>Facebook</div>
+                  <div>Instagram</div>
+                </div>
+                <div>
+                  <h5 class="font-medium mb-2">Address</h5>
+                  <div>Sector-c, Central Indrapuri</div>
+                  <div>Bhopal, Madhya Pradesh</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-[30%] aspect-video rounded-md overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="https://img.freepik.com/premium-vector/map-with-destination-location-point-city-map-with-street-river-gps-map-navigator-concept_34645-1078.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="flex gap-4 justify-between py-10">
+            <h5>Copyright &copy; 2024 Mebelevv</h5>
+            <p>Bce npaba 3awnwhebl</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
