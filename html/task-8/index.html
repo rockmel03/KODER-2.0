@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxterior</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body>
+    <main>
+      <section id="hero" class="w-full h-screen">
+        <nav class="w-full h-[10%]">
+          <div
+            class="max-w-screen-xl mx-auto flex items-center justify-between px-5 py-4"
+          >
+            <h3 class="text-2xl font-semibold text-[#5A6E79]">Luxterior</h3>
+
+            <div class="space-x-10">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Features</a>
+              <a href="#">Contacts</a>
+            </div>
+
+            <div class="flex gap-5">
+              <div class="w-10 h-10 rounded-full grid place-items-center">
+                <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M11 2C15.968 2 20 6.032 20 11C20 15.968 15.968 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2ZM11 18C14.8675 18 18 14.8675 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18ZM19.4853 18.0711L22.3137 20.8995L20.8995 22.3137L18.0711 19.4853L19.4853 18.0711Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="w-10 h-10 rounded-full grid place-items-center">
+                <svg
+                  class="w-6 h-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="max-w-screen-xl mx-auto w-full h-[90%] px-5 relative">
+          <div class="w-full h-full flex items-center justify-end">
+            <div class="w-[80%] h-[80%] rounded-l-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- <div
+            class="absolute z-[1] top-0 w-full h-full py-10 flex items-center justify-between"
+          >
+            <div
+              class="bg-[#5A6E79] text-white w-[35%] rounded-r-lg p-10 space-y-10"
+            >
+              <h1 class="text-5xl font-bold">
+                We help you make modern interiors
+              </h1>
+              <p class="text-xl">
+                We will help you to make an elegant and luxurious interior
+                designed by professional interior designers
+              </p>
+            </div>
+            <div class="bg-[#5A6E79] text-white self-end p-10 rounded-lg">
+              <svg
+                class="w-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.0001 1.99974L11.0002 1.9996L11.0002 18.1715L7.05044 14.2218L5.63623 15.636L12.0002 22L18.3642 15.636L16.9499 14.2218L13.0002 18.1716L13.0001 1.99974Z"
+                ></path>
+              </svg>
+            </div>
+          </div> -->
+        </div>
+        <div class="absolute z-[1] top-0 w-full h-full py-10 flex items-center">
+          <div class="w-full relative">
+            <div
+              class="absolute z-[1] w-[40%] h-full bg-[#5A6E79] rounded-r-lg"
+            ></div>
+            <div class="max-w-screen-xl mx-auto w-full">
+              <div
+                class="relative z-[2] w-[35%] bg-[#5A6E79] text-white rounded-r-lg px-5 py-10 pr-20 space-y-10"
+              >
+                <h1 class="text-5xl font-bold">
+                  We help you make modern interiors
+                </h1>
+                <p class="text-xl">
+                  We will help you to make an elegant and luxurious interior
+                  designed by professional interior designers
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute bottom-10 w-full">
+            <div class="max-w-screen-xl mx-auto w-full px-2 flex justify-end">
+              <a
+                href="#services"
+                class="w-fit bg-[#5A6E79] text-white self-end p-10 rounded-lg"
+              >
+                <svg
+                  class="w-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M13.0001 1.99974L11.0002 1.9996L11.0002 18.1715L7.05044 14.2218L5.63623 15.636L12.0002 22L18.3642 15.636L16.9499 14.2218L13.0002 18.1716L13.0001 1.99974Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="max-w-screen-xl mx-auto w-full py-20">
+          <div class="flex items-center gap-5">
+            <div class="w-40 h-[0.5em] bg-black"></div>
+            <h2 class="text-5xl font-bold">
+              Benefits you get when <br />
+              using our services
+            </h2>
+          </div>
+          <div class="mt-20 flex gap-5">
+            <article class="flex-1 flex gap-5 p-5">
+              <div class="flex-shrink-0 w-20 h-20 grid place-items-center">
+                <svg
+                  class="w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 6.99999C16.4183 6.99999 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 6.99999 12 6.99999ZM12 8.99999C8.68629 8.99999 6 11.6863 6 15C6 18.3137 8.68629 21 12 21C15.3137 21 18 18.3137 18 15C18 11.6863 15.3137 8.99999 12 8.99999ZM12 10.5L13.3225 13.1797L16.2798 13.6094L14.1399 15.6953L14.645 18.6406L12 17.25L9.35497 18.6406L9.86012 15.6953L7.72025 13.6094L10.6775 13.1797L12 10.5ZM18 1.99999V4.99999L16.6366 6.13755C15.5305 5.5577 14.3025 5.17884 13.0011 5.04948L13 1.99899L18 1.99999ZM11 1.99899L10.9997 5.04939C9.6984 5.17863 8.47046 5.55735 7.36441 6.13703L6 4.99999V1.99999L11 1.99899Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="space-y-8">
+                <h3 class="text-2xl font-semibold">Best Quality</h3>
+                <p class="text-lg font-medium text-zinc-500">
+                  All of our furniture uses the best materials and choices for
+                  our customers.
+                </p>
+              </div>
+            </article>
+            <article class="flex-1 flex gap-5 p-5">
+              <div class="flex-shrink-0 w-20 h-20 grid place-items-center">
+                <svg
+                  class="w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M8.96456 18C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456ZM15 7H3V15.0505C3.63526 14.4022 4.52066 14 5.5 14C6.8962 14 8.10145 14.8175 8.66318 16H14.3368C14.5045 15.647 14.7296 15.3264 15 15.0505V7ZM17 13H21V12.715L18.9917 10H17V13ZM17.5 19C18.1531 19 18.7087 18.5826 18.9146 18C18.9699 17.8436 19 17.6753 19 17.5C19 16.6716 18.3284 16 17.5 16C16.6716 16 16 16.6716 16 17.5C16 17.6753 16.0301 17.8436 16.0854 18C16.2913 18.5826 16.8469 19 17.5 19ZM7 17.5C7 16.6716 6.32843 16 5.5 16C4.67157 16 4 16.6716 4 17.5C4 17.6753 4.03008 17.8436 4.08535 18C4.29127 18.5826 4.84689 19 5.5 19C6.15311 19 6.70873 18.5826 6.91465 18C6.96992 17.8436 7 17.6753 7 17.5Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="space-y-8">
+                <h3 class="text-2xl font-semibold">Free Shipping</h3>
+                <p class="text-lg font-medium text-zinc-500">
+                  All of our furniture uses the best materials a Free shipping
+                  everytime you buy fumiture from us without exeption
+                </p>
+              </div>
+            </article>
+            <article class="flex-1 flex gap-5 p-5">
+              <div class="flex-shrink-0 w-20 h-20 grid place-items-center">
+                <svg
+                  class="w-12"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M10.0072 2.10365C8.60556 1.64993 7.08193 2.28104 6.41168 3.59294L5.6059 5.17011C5.51016 5.35751 5.35775 5.50992 5.17036 5.60566L3.59318 6.41144C2.28128 7.08169 1.65018 8.60532 2.10389 10.0069L2.64935 11.6919C2.71416 11.8921 2.71416 12.1077 2.64935 12.3079L2.10389 13.9929C1.65018 15.3945 2.28129 16.9181 3.59318 17.5883L5.17036 18.3941C5.35775 18.4899 5.51016 18.6423 5.6059 18.8297L6.41169 20.4068C7.08194 21.7187 8.60556 22.3498 10.0072 21.8961L11.6922 21.3507C11.8924 21.2859 12.1079 21.2859 12.3081 21.3507L13.9931 21.8961C15.3947 22.3498 16.9183 21.7187 17.5886 20.4068L18.3944 18.8297C18.4901 18.6423 18.6425 18.4899 18.8299 18.3941L20.4071 17.5883C21.719 16.9181 22.3501 15.3945 21.8964 13.9929L21.3509 12.3079C21.2861 12.1077 21.2861 11.8921 21.3509 11.6919L21.8964 10.0069C22.3501 8.60531 21.719 7.08169 20.4071 6.41144L18.8299 5.60566C18.6425 5.50992 18.4901 5.3575 18.3944 5.17011L17.5886 3.59294C16.9183 2.28104 15.3947 1.64993 13.9931 2.10365L12.3081 2.6491C12.1079 2.71391 11.8924 2.71391 11.6922 2.6491L10.0072 2.10365ZM8.19271 4.50286C8.41612 4.06556 8.924 3.8552 9.39119 4.00643L11.0762 4.55189C11.6768 4.74632 12.3235 4.74632 12.9241 4.55189L14.6091 4.00643C15.0763 3.8552 15.5841 4.06556 15.8076 4.50286L16.6133 6.08004C16.9006 6.64222 17.3578 7.09946 17.92 7.38668L19.4972 8.19246C19.9345 8.41588 20.1448 8.92375 19.9936 9.39095L19.4481 11.076C19.2537 11.6766 19.2537 12.3232 19.4481 12.9238L19.9936 14.6088C20.1448 15.076 19.9345 15.5839 19.4972 15.8073L17.92 16.6131C17.3578 16.9003 16.9006 17.3576 16.6133 17.9197L15.8076 19.4969C15.5841 19.9342 15.0763 20.1446 14.6091 19.9933L12.9241 19.4479C12.3235 19.2535 11.6768 19.2535 11.0762 19.4479L9.3912 19.9933C8.924 20.1446 8.41612 19.9342 8.19271 19.4969L7.38692 17.9197C7.09971 17.3576 6.64246 16.9003 6.08028 16.6131L4.50311 15.8073C4.06581 15.5839 3.85544 15.076 4.00668 14.6088L4.55213 12.9238C4.74656 12.3232 4.74656 11.6766 4.55213 11.076L4.00668 9.39095C3.85544 8.92375 4.06581 8.41588 4.50311 8.19246L6.08028 7.38668C6.64246 7.09946 7.09971 6.64222 7.38692 6.08004L8.19271 4.50286ZM6.75972 11.7573L11.0023 15.9999L18.0734 8.92885L16.6592 7.51464L11.0023 13.1715L8.17394 10.343L6.75972 11.7573Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="space-y-8">
+                <h3 class="text-2xl font-semibold">Warranty</h3>
+                <p class="text-lg font-medium text-zinc-500">
+                  Every time you buy our furniture products, you will get a
+                  warranty without exception
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="max-w-screen-xl mx-auto w-full h-full px-5 py-20 flex gap-5"
+        >
+          <div class="w-[40%]">
+            <img
+              src="https://images.unsplash.com/photo-1615875474908-f403116f5287?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="w-[60%] p-5 space-y-10">
+            <h2 class="text-5xl font-semibold">
+              We provide you the best experience
+            </h2>
+            <p class="text-lg text-zinc-500">
+              You don't worry about the results because all of these interiors
+              are made by people who are professionals in their fields with an
+              elegant and luxurious style and with premium quality materials.
+            </p>
+
+            <div class="flex items-start justify-between my-10">
+              <div class="flex flex-col gap-2 justify-center">
+                <h3 class="text-8xl font-semibold text-zinc-500">17</h3>
+                <p class="text-xl font-medium">Years <br />experience</p>
+              </div>
+              <div class="flex flex-col gap-2 justify-center">
+                <h3 class="text-8xl font-semibold text-zinc-500">85</h3>
+                <p class="text-xl font-medium">Awwards <br />gained</p>
+              </div>
+              <div class="flex flex-col gap-2 justify-center">
+                <h3 class="text-8xl font-semibold text-zinc-500">537</h3>
+                <p class="text-xl font-medium">Funitures <br />sold</p>
+              </div>
+            </div>
+            <button
+              class="border-2 px-5 py-3 text-lg font-medium flex gap-2 items-center relative"
+            >
+              Learn more
+              <span class="absolute left-[95%]">
+                <svg
+                  class="w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M1.99974 13.0001L1.9996 11.0002L18.1715 11.0002L14.2218 7.05044L15.636 5.63623L22 12.0002L15.636 18.3642L14.2218 16.9499L18.1716 13.0002L1.99974 13.0001Z"
+                  ></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="max-w-screen-xl mx-auto w-full h-full px-5 py-20 flex flex-row-reverse gap-5"
+        >
+          <div class="w-[40%]">
+            <img
+              src="https://images.unsplash.com/photo-1615875474908-f403116f5287?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="w-[60%] p-5 space-y-20">
+            <h2 class="text-5xl font-semibold">
+              We provide the best <br />
+              process experience
+            </h2>
+
+            <div class="flex flex-col gap-8">
+              <div class="flex gap-8">
+                <div class="flex items-center flex-col gap-2">
+                  <div
+                    class="flex-shrink-0 w-14 h-14 rounded-full bg-zinc-500 grid place-items-center font-bold text-2xl text-white"
+                  >
+                    01
+                  </div>
+                  <div class="w-1 h-full bg-zinc-500"></div>
+                </div>
+                <div class="space-y-5">
+                  <h3 class="text-2xl font-semibold">Briefing</h3>
+                  <p class="text-lg w-[60%]">
+                    First thing you determine the concept and model you want,
+                    then choose what colors and materials you want to use in
+                    your furniture.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-8">
+                <div class="flex items-center flex-col gap-2">
+                  <div
+                    class="flex-shrink-0 w-14 h-14 rounded-full bg-zinc-500 grid place-items-center font-bold text-2xl text-white"
+                  >
+                    02
+                  </div>
+                  <div class="w-1 h-full bg-zinc-500"></div>
+                </div>
+                <div class="space-y-5">
+                  <h3 class="text-2xl font-semibold">Processing</h3>
+                  <p class="text-lg w-[60%]">
+                    When the briefing process is complete and what the client
+                    wants has been achieved. Then we carry out the execution of
+                    the desired concept.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-8">
+                <div class="flex items-center flex-col gap-2">
+                  <div
+                    class="flex-shrink-0 w-14 h-14 rounded-full bg-zinc-500 grid place-items-center font-bold text-2xl text-white"
+                  >
+                    03
+                  </div>
+                  <div class="w-1 h-full bg-zinc-500"></div>
+                </div>
+                <div class="space-y-5">
+                  <h3 class="text-2xl font-semibold">Finishing</h3>
+                  <p class="text-lg w-[60%]">
+                    After the process is complete, we will immediately carry out
+                    the finishing stage and we do it carefully and make sure
+                    there are no mistakes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="max-w-screen-xl mx-auto w-full h-full px-5 py-20">
+          <div class="flex items-center justify-between">
+            <h2 class="text-5xl font-semibold">
+              We aur customers<br />
+              are saying
+            </h2>
+            <div class="flex items-center gap-5">
+              <div class="opacity-50 text-[#5A6E79]">
+                <svg
+                  class="w-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="text-[#5A6E79]">
+                <svg
+                  class="w-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-5 p-5 mt-10">
+            <article
+              class="flex-1 space-y-5 p-14 bg-[#5A6E79] text-white rounded-lg"
+            >
+              <div>
+                <svg
+                  class="w-14"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M4.58341 17.3211C3.55316 16.2274 3 15 3 13.0103C3 9.51086 5.45651 6.37366 9.03059 4.82318L9.92328 6.20079C6.58804 8.00539 5.93618 10.346 5.67564 11.822C6.21263 11.5443 6.91558 11.4466 7.60471 11.5105C9.40908 11.6778 10.8312 13.159 10.8312 15C10.8312 16.933 9.26416 18.5 7.33116 18.5C6.2581 18.5 5.23196 18.0095 4.58341 17.3211ZM14.5834 17.3211C13.5532 16.2274 13 15 13 13.0103C13 9.51086 15.4565 6.37366 19.0306 4.82318L19.9233 6.20079C16.588 8.00539 15.9362 10.346 15.6756 11.822C16.2126 11.5443 16.9156 11.4466 17.6047 11.5105C19.4091 11.6778 20.8312 13.159 20.8312 15C20.8312 16.933 19.2642 18.5 17.3312 18.5C16.2581 18.5 15.232 18.0095 14.5834 17.3211Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-semibold">
+                The results given are very satisfying
+              </h3>
+              <p class="">
+                "Being able to work with the exterior is an extraordinary thing
+                they provide excellent service and the results given are also
+                very satisfying by giving elegant impression."
+              </p>
+
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-zinc-200 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG90cmFpdHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h5>Ralph Edwards</h5>
+                  <p>Product manager</p>
+                </div>
+              </div>
+            </article>
+            <article
+              class="flex-1 space-y-5 p-14 bg-[#5A6E79] text-white rounded-lg"
+            >
+              <div>
+                <svg
+                  class="w-14"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M4.58341 17.3211C3.55316 16.2274 3 15 3 13.0103C3 9.51086 5.45651 6.37366 9.03059 4.82318L9.92328 6.20079C6.58804 8.00539 5.93618 10.346 5.67564 11.822C6.21263 11.5443 6.91558 11.4466 7.60471 11.5105C9.40908 11.6778 10.8312 13.159 10.8312 15C10.8312 16.933 9.26416 18.5 7.33116 18.5C6.2581 18.5 5.23196 18.0095 4.58341 17.3211ZM14.5834 17.3211C13.5532 16.2274 13 15 13 13.0103C13 9.51086 15.4565 6.37366 19.0306 4.82318L19.9233 6.20079C16.588 8.00539 15.9362 10.346 15.6756 11.822C16.2126 11.5443 16.9156 11.4466 17.6047 11.5105C19.4091 11.6778 20.8312 13.159 20.8312 15C20.8312 16.933 19.2642 18.5 17.3312 18.5C16.2581 18.5 15.232 18.0095 14.5834 17.3211Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="text-3xl font-semibold">
+                The service provided is very good and friendly
+              </h3>
+              <p class="">
+                "At that time I wanted to make a chair, then I want to luxterior
+                to make the chair and after it was finished finished the results
+                were unexpected. The results given are in accordance with what I
+                want."
+              </p>
+
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-full bg-zinc-200 overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHBvdHJhaXR8ZW58MHx8MHx8fDA%3D"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h5>Leslie Aleksander</h5>
+                  <p>Housewife</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="">
+        <div
+          class="max-w-screen-xl mx-auto w-full h-full py-10 px-5 flex flex-col gap-10 items-center justify-center"
+        >
+          <h2 class="text-center text-6xl font-bold">
+            Subscribe to get the latest <br />
+            news about us
+          </h2>
+          <p class="text-center text-xl w-[45%]">
+            we recommanded you to subscribe our newspaper, enter your email
+            below to get our daily update about us
+          </p>
+          <form
+            action="#"
+            class="p-2 w-[60%] bg-white flex items-center justify-center"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+              class="flex-1 px-5 py-4 font-semibold"
+            />
+            <button
+              type="submit"
+              class="px-5 py-4 font-semibold text-white bg-[#5A6E79]"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="text-white bg-[#5A6E79] -mt-20 pt-10">
+        <div class="max-w-screen-xl mx-auto w-full py-20 px-5 flex">
+          <div class="w-[40%]">
+            <h2 class="text-2xl font-semibold mb-4">Luxterior</h2>
+            <p class="w-[50%]">
+              We will help you to make an slagant and Suxurious interior
+              designed try o professional interior designer
+            </p>
+          </div>
+          <div class="w-[60%] flex gap-1 justify-between">
+            <ul class="flex flex-col gap-2">
+              <h5 class="mb-2 font-semibold text-xl">About</h5>
+              <li>About us</li>
+              <li>Features</li>
+              <li>Careers</li>
+            </ul>
+
+            <ul class="flex flex-col gap-2">
+              <h5 class="mb-2 font-semibold text-xl">Company</h5>
+              <li>Our team</li>
+              <li>Porther with vi</li>
+              <li>FAQ</li>
+              <li>Acomuni</li>
+            </ul>
+
+            <ul class="flex flex-col gap-2">
+              <h5 class="mb-2 font-semibold text-xl">Support</h5>
+              <li>Support centar</li>
+              <li>Feedback</li>
+              <li>Contact us</li>
+              <li>Accessity</li>
+            </ul>
+
+            <ul class="flex flex-col gap-2">
+              <h5 class="mb-2 font-semibold text-xl">Get in touch</h5>
+              <li>Qwestion or feedback?</li>
+              <li>We'd love to hear hom you</li>
+              <li class="flex gap-2">
+                <div>
+                  <svg
+                    class="w-8"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    class="w-8"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    class="w-8"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.6874 3.0625L12.6907 8.77425L8.37045 3.0625H2.11328L9.58961 12.8387L2.50378 20.9375H5.53795L11.0068 14.6886L15.7863 20.9375H21.8885L14.095 10.6342L20.7198 3.0625H17.6874ZM16.6232 19.1225L5.65436 4.78217H7.45745L18.3034 19.1225H16.6232Z"
+                    ></path>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
