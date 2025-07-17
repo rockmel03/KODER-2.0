@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem 3</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    section.task-showcase > div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .task {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border: 1px solid;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .task.completed {
+      opacity: 0.5;
+    }
+
+    .task.completed > h3 {
+      text-decoration: line-through;
+    }
+  </style>
+  <body>
+    <main>
+      <form action="">
+        <input
+          type="text"
+          name="task"
+          id="task"
+          required
+          placeholder="Enter Task"
+        />
+        <input type="date" name="due-date" id="due-date" required />
+        <input type="checkbox" name="status" id="status" />
+        <label for="status">Completed</label>
+
+        <button type="submit">Add Task</button>
+      </form>
+
+      <br />
+      <section class="task-showcase">
+        <div>
+          <h2>Tasks</h2>
+          <div>
+            <select name="status-filter" id="status-filter">
+              <option value="">status</option>
+              <option value="completed">Completed</option>
+              <option value="pending">Pending</option>
+            </select>
+            <select name="date-filter" id="date-filter">
+              <option value="">Date</option>
+              <option value="upcoming">Upcoming</option>
+              <option value="past">Past</option>
+            </select>
+          </div>
+        </div>
+        <br />
+        <ul id="" class="tasks-container"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
