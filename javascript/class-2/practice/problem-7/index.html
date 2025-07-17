@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs UI with Dynamic Content</title>
+  </head>
+
+  <style>
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+  </style>
+  <body>
+    <main>
+      <h1>Tabs UI with Dynamic Content</h1>
+
+      <div>
+        <button id="btn1" data-target="about" class="btn">About</button>
+        <button id="btn2" data-target="projects" class="btn">Projects</button>
+        <button id="btn3" data-target="contacts" class="btn">Contacts</button>
+      </div>
+
+      <section id="about" class="active">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          molestias culpa, impedit sit accusantium expedita quibusdam, laborum,
+          molestiae iusto velit earum. Accusamus blanditiis aliquam ipsa et, eum
+          consectetur mollitia minima. Amet nemo dolores temporibus! Vitae
+          provident quod consequatur modi, dolor sapiente earum esse
+          perspiciatis et, architecto tempora suscipit dolore officia?
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          delectus accusamus officiis expedita dicta. Dolorum vel,
+          necessitatibus laboriosam laudantium commodi assumenda, architecto
+          fuga dolores quibusdam mollitia excepturi dicta ratione corrupti nam
+          soluta sapiente nemo totam consequatur? Libero, reprehenderit
+          doloribus voluptatum perspiciatis, sed, impedit minus consequuntur
+          perferendis fugit vero esse illum.
+        </p>
+      </section>
+      <section id="contacts">
+        <h2>Contact</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
+          explicabo distinctio culpa consequuntur tenetur ab maxime libero
+          natus, voluptatum repellendus maiores perspiciatis, magnam, facilis
+          corrupti. Adipisci, voluptatem veniam possimus laborum ipsum
+          recusandae sit, unde cumque aperiam ratione impedit! Hic quos
+          accusamus sapiente distinctio delectus optio earum omnis vel eaque in.
+        </p>
+      </section>
+    </main>
+
+    <script src='script.js'></script>
+  </body>
+</html>
