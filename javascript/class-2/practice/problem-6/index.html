@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Timer</title>
+
+    <style>
+      main {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>OTP Timer</h1>
+
+      <form action="">
+        <input
+          type="number"
+          name="otp"
+          id="otp"
+          placeholder="Enter OTP here..."
+          maxlength="6"
+          minlength="6"
+          required
+        />
+      </form>
+
+      <br />
+      <div>
+        <button id="resend-btn">Resend OTP</button> <span id="time"></span>
+      </div>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
