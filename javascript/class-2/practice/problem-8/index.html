@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker with Monthly Filter</title>
+    <style>
+      li {
+        border: 2px solid black;
+        padding: 1rem;
+
+        display: grid;
+        grid-template-columns: 2fr 0.5fr 0.5fr;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .expense-bar {
+        display: grid;
+        grid-template-columns: 2fr 0.5fr 0.5fr;
+        align-items: center;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Expense Tracker with Monthly Filter</h1>
+
+      <form action="">
+        <input type="text" name="name" id="name" required />
+        <input type="number" name="amount" id="amount" min="1" required />
+        <input type="date" name="date" id="date" />
+
+        <button type="submit">Save</button>
+      </form>
+
+      <div>
+        <div class="expense-bar">
+          <h2>Expenses</h2>
+
+          <select name="year" id="years-dropdown">
+            <option value="">All</option>
+          </select>
+
+          <select name="month" id="months-dropdown">
+            <option value="">All</option>
+          </select>
+          <p>Total Expenses $<strong id="totalExpenses">0</strong></p>
+        </div>
+        <ul></ul>
+      </div>
+    </main>
+
+  <script src='script.js'></script>
+  </body>
+</html>
