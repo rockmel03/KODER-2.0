@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting UI (Frontend-Only)</title>
+
+    <style>
+      #list-bar,
+      ul > li {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr 1fr;
+      }
+      #list-bar > button {
+        border: none;
+        cursor: pointer;
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Sorting UI (Frontend-Only)</h1>
+      <div>
+        <h2>Students</h2>
+      </div>
+
+      <div>
+        <div id="list-bar">
+          <button id="roll">Roll no.</button>
+          <button id="name">Name</button>
+          <button id="age">Age</button>
+          <button id="marks">Marks</button>
+        </div>
+        <ul></ul>
+      </div>
+    </main>
+
+  <script src='script.js'></script>
+  </body>
+</html>
