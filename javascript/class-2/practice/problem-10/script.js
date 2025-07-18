@@ -46,12 +46,16 @@ listBar.addEventListener("click", function (e) {
     // sort according to name
 
     students.sort((a, b) => {
-      const char1Ascii = a.name.charCodeAt(0);
+      /*  const char1Ascii = a.name.charCodeAt(0);
       const char2Ascii = b.name.charCodeAt(0);
 
       return sortedBy[id] === 1
         ? char2Ascii - char1Ascii
-        : char1Ascii - char2Ascii;
+        : char1Ascii - char2Ascii; */
+
+      return sortedBy[id] === 1
+        ? a.name.localeCompare(b.name)
+        : b.name.localeCompare(a.name);
     });
   } else if (id === "age") {
     students.sort((a, b) =>
