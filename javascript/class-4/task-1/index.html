@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .task {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <input
+          type="text"
+          name="task"
+          id="task"
+          placeholder="Task here..."
+          required
+        />
+        <input type="date" name="date" id="date" required />
+        <button type="submit">Save</button>
+      </form>
+      <br />
+      <br />
+
+      <h2>Pending Tasks</h2>
+      <ul id="pending-tasks-list"></ul>
+
+      <hr />
+
+      <h2>Completed Tasks</h2>
+      <ul id="completed-tasks-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
