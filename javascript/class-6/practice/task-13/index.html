@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard Shortcuts UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="min-h-screen bg-gray-100 py-10">
+      <h1 class="text-center text-3xl font-bold text-gray-800 mb-8">
+        Keyboard Shortcuts UI
+      </h1>
+      <p class="text-center text-gray-600 mb-4">
+        Press Ctrl+K to open the search box and Esc to close it.
+      </p>
+      <section class="flex items-center justify-center">
+        <div id="searchBox" class="hidden bg-white p-4 rounded shadow-md">
+          <input
+            type="search"
+            placeholder="Search here..."
+            class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-400"
+          />
+        </div>
+      </section>
+    </main>
+
+   <script src='script.js'></script>
+  </body>
+</html>
