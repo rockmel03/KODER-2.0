@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Toggle (👁️ Show/Hide)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen flex flex-col items-center justify-center bg-gray-100"
+    >
+      <h1 class="text-3xl font-bold mb-8 text-gray-800">
+        Password Toggle (👁️ Show/Hide)
+      </h1>
+      <div
+        class="flex items-center bg-white p-6 rounded-lg shadow-md space-x-4"
+      >
+        <input
+          type="password"
+          name="password"
+          id="password-input"
+          class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          placeholder="Enter your password"
+        />
+        <label
+          for="show-hide"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+        >
+          show
+        </label>
+        <input type="checkbox" name="show" id="show-hide" class="hidden" />
+      </div>
+    </main>
+
+    <script>
+      const pwdInput = document.querySelector("#password-input");
+      const showHide = document.querySelector("#show-hide");
+      const label = document.querySelector("label[for='show-hide']");
+
+      showHide.addEventListener("input", function (e) {
+        if (e.target.checked) {
+          pwdInput.setAttribute("type", "text");
+          label.textContent = "Hide";
+        } else {
+          pwdInput.setAttribute("type", "password");
+          label.textContent = "Show";
+        }
+      });
+    </script>
+  </body>
+</html>
