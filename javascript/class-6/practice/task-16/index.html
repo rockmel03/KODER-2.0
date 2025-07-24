@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification Popups with Timeout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen flex flex-col items-center justify-center bg-gray-100"
+    >
+      <h1 class="text-3xl font-bold mb-8 text-gray-800">
+        Notification Popups with Timeout
+      </h1>
+      <div id="btns-container" class="flex gap-4">
+        <button
+          id="success-btn"
+          class="px-6 py-2 bg-green-500 text-white rounded shadow hover:bg-green-600 transition"
+        >
+          Success
+        </button>
+        <button
+          id="error-btn"
+          class="px-6 py-2 bg-red-500 text-white rounded shadow hover:bg-red-600 transition"
+        >
+          Error
+        </button>
+        <button
+          id="info-btn"
+          class="px-6 py-2 bg-blue-500 text-white rounded shadow hover:bg-blue-600 transition"
+        >
+          Info
+        </button>
+      </div>
+
+      <div
+        id="toast-container"
+        class="w-full h-full p-5 fixed top-0 left-0 -translate-1/2 pointer-events-none flex flex-col gap-2 items-center"
+      ></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
