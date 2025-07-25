@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating System with Stars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="min-h-screen flex flex-col items-center justify-center">
+      <h1
+        class="text-4xl font-extrabold mb-10 text-yellow-700 drop-shadow-lg tracking-wide"
+      >
+        Rating System with Stars
+      </h1>
+      <div>
+        <div
+          id="stars-container"
+          class="flex items-center gap-6 bg-white p-8 rounded-2xl shadow-2xl border border-yellow-200"
+        >
+          <span
+            class="star text-5xl cursor-pointer hover:scale-125 transition-transform duration-200 text-gray-300 hover:text-yellow-400"
+            data-rating="1"
+            >★</span
+          >
+          <span
+            class="star text-5xl cursor-pointer hover:scale-125 transition-transform duration-200 text-gray-300 hover:text-yellow-400"
+            data-rating="2"
+            >★</span
+          >
+          <span
+            class="star text-5xl cursor-pointer hover:scale-125 transition-transform duration-200 text-gray-300 hover:text-yellow-400"
+            data-rating="3"
+            >★</span
+          >
+          <span
+            class="star text-5xl cursor-pointer hover:scale-125 transition-transform duration-200 text-gray-300 hover:text-yellow-400"
+            data-rating="4"
+            >★</span
+          >
+          <span
+            class="star text-5xl cursor-pointer hover:scale-125 transition-transform duration-200 text-gray-300 hover:text-yellow-400"
+            data-rating="5"
+            >★</span
+          >
+        </div>
+
+        <div id="rating-display-container" class="hidden">
+          <div
+            class="rating-display mt-8 text-xl font-semibold text-yellow-800 bg-yellow-50 px-6 py-3 rounded-lg shadow border border-yellow-200 flex items-center gap-2"
+            id="rating-display"
+          >
+            <svg
+              class="w-6 h-6 text-yellow-400 mr-2"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.967a1 1 0 00.95.69h4.175c.969 0 1.371 1.24.588 1.81l-3.38 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.922-.755 1.688-1.54 1.118l-3.38-2.454a1 1 0 00-1.175 0l-3.38 2.454c-.784.57-1.838-.196-1.539-1.118l1.287-3.966a1 1 0 00-.364-1.118L2.049 9.394c-.783-.57-.38-1.81.588-1.81h4.175a1 1 0 00.95-.69l1.286-3.967z"
+              />
+            </svg>
+            Rating: <span id="rating-value" class="ml-1">0</span> out of 5 stars
+          </div>
+
+          <div
+            class="rating-text mt-3 text-base text-yellow-700 italic px-2"
+            id="rating-text"
+          ></div>
+
+          <button
+            class="reset-button mt-8 px-8 py-2 bg-red-500 text-white rounded-full hover:bg-red-600 transition font-bold shadow"
+            id="reset-button"
+          >
+            Reset Rating
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const starsContainer = document.querySelector("#stars-container");
+      const stars = document.querySelectorAll(".star");
+
+      const ratingDisplayContainer = document.querySelector(
+        "#rating-display-container"
+      );
+      const ratingValueElem = document.querySelector("#rating-value");
+      const ratingTextElem = document.querySelector("#rating-text");
+      const resetButton = document.querySelector("#reset-button");
+
+      let hoverRating = 0;
+      let currentRating = 0;
+
+      const ratingTexts = {
+        1: "Poor - Needs improvement",
+        2: "Fair - Below expectations",
+        3: "Good - Meets expectations",
+        4: "Very Good - Exceeds expectations",
+        5: "Excellent - Outstanding!",
+      };
+
+      stars.forEach((star, index) => {
+        star.addEventListener("mouseover", function (e) {
+          hoverRating = index + 1;
+
+          updateStarsDisplay();
+        });
+
+        star.addEventListener("click", function (e) {
+          currentRating = index + 1;
+
+          updateStarsDisplay();
+          displayRatingText();
+        });
+      });
+
+      starsContainer.addEventListener("mouseleave", function (e) {
+        hoverRating = 0;
+
+        updateStarsDisplay();
+      });
+
+      resetButton.addEventListener("click", resetRating);
+
+      function updateStarsDisplay() {
+        // debugger;
+        const displayRating = hoverRating || currentRating;
+
+        stars.forEach((star, index) => {
+          if (index < displayRating) {
+            star.classList.add("text-yellow-500");
+          } else {
+            star.classList.remove("text-yellow-500");
+          }
+        });
+      }
+
+      function displayRatingText() {
+        if (currentRating > 0) {
+          ratingDisplayContainer.classList.remove("hidden");
+
+          ratingValueElem.textContent = currentRating;
+          ratingTextElem.textContent = ratingTexts[currentRating];
+        } else {
+          ratingDisplayContainer.classList.add("hidden");
+        }
+      }
+
+      function resetRating() {
+        currentRating = 0;
+        hoverRating = 0;
+
+        updateStarsDisplay();
+        displayRatingText();
+      }
+
+      updateStarsDisplay();
+      displayRatingText();
+    </script>
+  </body>
+</html>

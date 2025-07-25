@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating System with Stars</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen flex flex-col items-center justify-center bg-gray-100"
+    >
+      <h1 class="text-3xl font-bold mb-8 text-gray-800">
+        Rating System with Stars
+      </h1>
+      <div
+        id="stars-container"
+        class="flex items-center gap-4 bg-white p-6 rounded-lg shadow-lg"
+      ></div>
+    </main>
+
+    <script>
+      const starsContainer = document.querySelector("#stars-container");
+
+      for (let i = 0; i < 5; i++) {
+        const starDiv = document.createElement("div");
+        starDiv.id = `star-${i + 1}`;
+        starDiv.classList = `star w-10 cursor-pointer hover:scale-125 transition duration-200`;
+
+        starDiv.innerHTML = ` <svg
+            class="pointer-events-none" 
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"
+            ></path>
+          </svg>
+          `;
+
+        starsContainer.appendChild(starDiv);
+      }
+
+      const stars = document.querySelectorAll(".star");
+
+      starsContainer.addEventListener("mouseover", onMouseOver);
+      starsContainer.addEventListener("mouseleave", onMouseLeave);
+      starsContainer.addEventListener("click", handleClick);
+
+      function onMouseOver(e) {
+        if (e.target.classList.contains("star")) {
+          const starsArr = [...starsContainer.childNodes];
+          const index = starsArr.indexOf(e.target);
+
+          starsContainer.childNodes.forEach((str, idx) => {
+            if (idx <= index) {
+              str.classList.add("text-amber-400");
+            } else {
+              str.classList.remove("text-amber-400");
+            }
+          });
+        }
+      }
+
+      function onMouseLeave(e) {
+        stars.forEach((star) => {
+          star.classList.remove("text-amber-400");
+        });
+      }
+
+      function handleClick(e) {
+        if (e.target.classList.contains("star")) {
+          stars.forEach((star) => {
+            star.classList.remove("hover:scale-125");
+          });
+          starsContainer.removeEventListener("mouseover", onMouseOver);
+          starsContainer.removeEventListener("mouseleave", onMouseLeave);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer (Quiz App Logic)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen flex flex-col items-center justify-center bg-gray-100"
+    >
+      <h1 class="text-3xl font-bold mb-8 text-gray-800">
+        Countdown Timer (Quiz App Logic)
+      </h1>
+      <div
+        class="bg-white shadow-lg rounded-lg p-8 flex flex-col items-center w-full max-w-sm"
+      >
+        <p id="countdown" class="text-xl font-semibold mb-6 text-gray-700">
+          Countdown
+        </p>
+        <form action="" class="w-full flex justify-center">
+          <input
+            type="text"
+            placeholder="What is your name"
+            class="border font-bold py-2 px-6"
+          />
+          <button
+            type="submit"
+            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded transition-colors duration-200"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      const url = "https://opentdb.com/api.php?amount=10";
+
+      const form = document.querySelector("form");
+      const submitBtn = form.querySelector("button[type='submit']");
+      const countdown = document.querySelector("#countdown");
+
+      form.addEventListener("submit", function (evt) {
+        evt.preventDefault();
+        console.log(evt);
+      });
+
+      let time = 5;
+
+      const interval = setInterval(() => {
+        time--;
+
+        countdown.textContent = "time remain : " + time + "s";
+        if (time < 10) countdown.classList.add("text-red-500");
+
+        if (time <= 0) {
+          submitBtn.click();
+          clearInterval(interval);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
