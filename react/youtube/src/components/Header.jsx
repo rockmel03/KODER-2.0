@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ setShowSidebar }) => {
   return (
     <header className="w-full h-full sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 z-50">
       <div className="w-full h-full flex items-center justify-between px-4 py-2">
@@ -8,6 +8,7 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <button
             id="menuBtn"
+            onClick={() => setShowSidebar((prev) => !prev)}
             className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full"
           >
             <svg
@@ -83,38 +84,12 @@ const Header = () => {
           </button>
           <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full">
             <svg
-              className="w-6 h-6 text-gray-700 dark:text-gray-300"
-              fill="none"
-              stroke="currentColor"
+              className="w-5 h-5 text-gray-700 dark:text-gray-300"
+              xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
+              fill="currentColor"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 17h5l-5 5-5-5h5z"
-              ></path>
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 7H4l5-5 5 5H9z"
-              ></path>
-            </svg>
-          </button>
-          <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full">
-            <svg
-              className="w-6 h-6 text-gray-700 dark:text-gray-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 17h5l-5 5-5-5h5z"
-              ></path>
+              <path d="M22 20H2V18H3V11.0314C3 6.04348 7.02944 2 12 2C16.9706 2 21 6.04348 21 11.0314V18H22V20ZM5 18H19V11.0314C19 7.14806 15.866 4 12 4C8.13401 4 5 7.14806 5 11.0314V18ZM9.5 21H14.5C14.5 22.3807 13.3807 23.5 12 23.5C10.6193 23.5 9.5 22.3807 9.5 21Z"></path>
             </svg>
           </button>
           <div className="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center cursor-pointer">
