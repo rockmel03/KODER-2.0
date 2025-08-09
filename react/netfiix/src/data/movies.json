@@ -1,0 +1,190 @@
+{
+  "trending": [
+    {
+      "id": 1,
+      "title": "Stranger Things",
+      "image": "https://m.media-amazon.com/images/M/MV5BN2ZmYjg1YmItNWQ4OC00YWM0LWE0ZDktYThjOTZiZjhhN2Q2XkEyXkFqcGdeQXVyMTEzMTI1Mjk@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Sci-Fi",
+      "year": 2022,
+      "rating": "TV-14",
+      "description": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces."
+    },
+    {
+      "id": 2,
+      "title": "The Crown",
+      "image": "https://m.media-amazon.com/images/M/MV5BZmY0MzBlNjctYjc4Ny00ODBmLTg2NzEtODUyYzlkOTk3MGE2XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg",
+      "genre": "Drama",
+      "year": 2023,
+      "rating": "TV-MA",
+      "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign."
+    },
+    {
+      "id": 3,
+      "title": "Ozark",
+      "image": "https://m.media-amazon.com/images/M/MV5BM2UzYTMxZjQtNzA1YS00Y2IwLWJlZWMtMjJmOWNkNWE2YWY4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Crime",
+      "year": 2022,
+      "rating": "TV-MA",
+      "description": "A financial advisor drags his family from Chicago to the Missouri Ozarks."
+    },
+    {
+      "id": 4,
+      "title": "The Witcher",
+      "image": "https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Fantasy",
+      "year": 2023,
+      "rating": "TV-MA",
+      "description": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world."
+    },
+    {
+      "id": 5,
+      "title": "House of Cards",
+      "image": "https://m.media-amazon.com/images/M/MV5BODM1MDU2NjY5NF5BMl5BanBnXkFtZTgwMDkxNTcwNjM@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Drama",
+      "year": 2021,
+      "rating": "TV-MA",
+      "description": "A Congressman works to exact revenge on those who betrayed him."
+    }
+  ],
+  "topPicks": [
+    {
+      "id": 6,
+      "title": "Breaking Bad",
+      "image": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg",
+      "genre": "Crime",
+      "year": 2023,
+      "rating": "TV-MA",
+      "description": "A high school chemistry teacher turned meth manufacturer."
+    },
+    {
+      "id": 7,
+      "title": "Black Mirror",
+      "image": "https://m.media-amazon.com/images/M/MV5BYTM3YWVhMDMtNjczMy00NGEyLWJhZDctYjNhMTRkNDE0ZTI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Sci-Fi",
+      "year": 2022,
+      "rating": "TV-MA",
+      "description": "An anthology series exploring technology's dark side."
+    },
+    {
+      "id": 8,
+      "title": "Narcos",
+      "image": "https://m.media-amazon.com/images/M/MV5BNmFjODU3YzgtMGUwNC00ZGI3LWFkNzQtY2I4NzQ5OTY0YjE0XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Crime",
+      "year": 2021,
+      "rating": "TV-MA",
+      "description": "The true story of Colombia's infamously violent drug cartels."
+    },
+    {
+      "id": 9,
+      "title": "Money Heist",
+      "image": "https://m.media-amazon.com/images/M/MV5BODI0ZTljYTMtODQ1NC00NmI0LTk1YWUtN2FlNDM1MDExMDlhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Action",
+      "year": 2023,
+      "rating": "TV-MA",
+      "description": "An unusual group of robbers attempt to carry out the most perfect robbery."
+    },
+    {
+      "id": 10,
+      "title": "Dark",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTk2NzUyOTctZDVkNS00ZGE5LWE3YmQtZGQzNjk2YWZjNGVkXkEyXkFqcGdeQXVyMjg1NDcxNDE@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Sci-Fi",
+      "year": 2022,
+      "rating": "TV-MA",
+      "description": "A family saga with a supernatural twist set in a German town."
+    }
+  ],
+  "comedy": [
+    {
+      "id": 11,
+      "title": "The Office",
+      "image": "https://m.media-amazon.com/images/M/MV5BMDNkOTE4NDQtMTNmYi00MWE0LWE4ZTktYTc0NzhhNWIzNzJiXkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Comedy",
+      "year": 2021,
+      "rating": "TV-14",
+      "description": "A mockumentary sitcom about office employees."
+    },
+    {
+      "id": 12,
+      "title": "Friends",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDVkYjU0MzctMWRmZi00NTkxLTgwZWEtOWVhYjZlYjllYmU4XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Comedy",
+      "year": 2020,
+      "rating": "TV-14",
+      "description": "Six friends navigating life and love in New York City."
+    },
+    {
+      "id": 13,
+      "title": "Brooklyn Nine-Nine",
+      "image": "https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Comedy",
+      "year": 2022,
+      "rating": "TV-14",
+      "description": "Comedy series following detectives in a Brooklyn precinct."
+    },
+    {
+      "id": 14,
+      "title": "The Good Place",
+      "image": "https://m.media-amazon.com/images/M/MV5BMzRjZWQwY2ItYjFmZC00OTQ1LWI2ZGYtNzc5ZjdmYTMxNGJkXkEyXkFqcGdeQXVyMjg1NDcxNDE@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Comedy",
+      "year": 2021,
+      "rating": "TV-14",
+      "description": "A woman tries to become a better person in the afterlife."
+    },
+    {
+      "id": 15,
+      "title": "Schitt's Creek",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDg1NTU2OWEtM2UzYi00Y2U0LWJmMWEtOWRhOWZiNWE5Zjk1XkEyXkFqcGdeQXVyMzQ2MDI5NjU@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Comedy",
+      "year": 2022,
+      "rating": "TV-14",
+      "description": "A wealthy family loses everything and moves to a small town."
+    }
+  ],
+  "action": [
+    {
+      "id": 16,
+      "title": "John Wick",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Action",
+      "year": 2023,
+      "rating": "R",
+      "description": "An ex-hitman comes out of retirement to track down gangsters."
+    },
+    {
+      "id": 17,
+      "title": "Mad Max: Fury Road",
+      "image": "https://m.media-amazon.com/images/M/MV5BN2EwM2I5OWMtMGQyMi00Zjg1LWJkNTctZTdjYTA4OGUwZjMyXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Action",
+      "year": 2022,
+      "rating": "R",
+      "description": "In a post-apocalyptic wasteland, Max teams up with Furiosa."
+    },
+    {
+      "id": 18,
+      "title": "The Matrix",
+      "image": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Action",
+      "year": 2021,
+      "rating": "R",
+      "description": "A computer hacker learns the truth about his reality."
+    },
+    {
+      "id": 19,
+      "title": "Die Hard",
+      "image": "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgwNWMtYTBmNjY5ZGI3NTA4XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Action",
+      "year": 2020,
+      "rating": "R",
+      "description": "A cop battles terrorists in a Los Angeles skyscraper."
+    },
+    {
+      "id": 20,
+      "title": "Mission: Impossible",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjAyODkzNDgxMF5BMl5BanBnXkFtZTcwMDY2OTcyOQ@@._V1_FMjpg_UX1000_.jpg",
+      "genre": "Action",
+      "year": 2023,
+      "rating": "PG-13",
+      "description": "Secret agent Ethan Hunt takes on impossible missions."
+    }
+  ]
+}
