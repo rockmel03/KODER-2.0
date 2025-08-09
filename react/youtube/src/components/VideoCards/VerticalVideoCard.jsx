@@ -1,6 +1,6 @@
 import React from "react";
 
-const VideoCard = () => {
+const VerticalVideoCard = () => {
   return (
     <div className="cursor-pointer group">
       <div className="relative video-thumbnail bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
@@ -28,4 +28,4 @@ const VideoCard = () => {
   );
 };
 
-export default VideoCard;
+export default VerticalVideoCard;

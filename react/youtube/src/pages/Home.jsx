@@ -1,7 +1,7 @@
 import React from "react";
-import CategoriesTab from "../components/CategoriesTab";
-import VideoCard from "../components/VideoCard";
+import CategoriesTab from "../components/Home/CategoriesTab";
 import { Link } from "react-router";
+import VerticalVideoCard from "../components/VideoCards/VerticalVideoCard";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {[...new Array(16)].map((item, idx) => (
             <Link to={`/watch/${idx}`} key={idx}>
-              <VideoCard />
+              <VerticalVideoCard />
             </Link>
           ))}
         </div>
