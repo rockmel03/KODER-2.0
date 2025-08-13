@@ -1,0 +1,58 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "company": "Google",
+      "role": "Senior Frontend Developer",
+      "dateApplied": "2024-08-01",
+      "status": "applied",
+      "salary": "$140k",
+      "location": "Mountain View, CA"
+    },
+    {
+      "id": 2,
+      "company": "Meta",
+      "role": "React Developer",
+      "dateApplied": "2024-08-05",
+      "status": "interviewing",
+      "salary": "$135k",
+      "location": "Menlo Park, CA"
+    },
+    {
+      "id": 3,
+      "company": "Apple",
+      "role": "iOS Developer",
+      "dateApplied": "2024-07-28",
+      "status": "offer",
+      "salary": "$150k",
+      "location": "Cupertino, CA"
+    },
+    {
+      "id": 4,
+      "company": "Netflix",
+      "role": "Full Stack Engineer",
+      "dateApplied": "2024-07-20",
+      "status": "rejected",
+      "salary": "$130k",
+      "location": "Los Gatos, CA"
+    },
+    {
+      "id": 5,
+      "company": "Spotify",
+      "role": "Frontend Engineer",
+      "dateApplied": "2024-08-10",
+      "status": "applied",
+      "salary": "$125k",
+      "location": "New York, NY"
+    },
+    {
+      "id": 6,
+      "company": "Airbnb",
+      "role": "Product Engineer",
+      "dateApplied": "2024-08-12",
+      "status": "interviewing",
+      "salary": "$145k",
+      "location": "San Francisco, CA"
+    }
+  ]
+}
