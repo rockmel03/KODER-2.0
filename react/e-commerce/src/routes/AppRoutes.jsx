@@ -20,7 +20,7 @@ const AppRoutes = () => {
           element: <Cart />,
         },
         {
-          path: "product/:id",
+          path: "products/:id",
           element: <ProductDetails />,
         },
       ],

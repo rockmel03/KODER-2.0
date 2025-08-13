@@ -33,7 +33,7 @@ const ProductCard = ({ product, onAddToCart }) => {
   return (
     <Card className="shadow-xl">
       <CardHeader>
-        <Link to={`/product/${id}`}>
+        <Link to={`/products/${id}`}>
           <div className="w-full aspect-square">
             <img
               src={image}
@@ -45,7 +45,7 @@ const ProductCard = ({ product, onAddToCart }) => {
       </CardHeader>
       <CardContent>
         <CardTitle>
-          <Link to={`/product/${id}`} className="hover:underline">
+          <Link to={`/products/${id}`} className="hover:underline">
             {title.length > 50 ? title.slice(0, 50) + "..." : title}
           </Link>
         </CardTitle>

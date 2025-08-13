@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { SearchBar } from "./SearchBar";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import { useProductContext } from "../context/ProductContext";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 const Header = () => {
   const { products } = useProductContext();
 
   const [searchedProducts, setSearchedProducts] = useState([]);
+  const navigate = useNavigate();
 
   const onSearch = (query) => {
     if (query.trim() && products) {
@@ -30,10 +31,13 @@ const Header = () => {
           <div className="absolute z-10 shadow w-full max-w-sm bg-white rounded ">
             <div className="flex flex-col gap-2">
               {searchedProducts.map((item) => (
-                <Link
-                  to={`/products/${item.id}`}
+                <button
+                  onClick={() => {
+                    navigate(`/products/${item.id}`);
+                    setSearchedProducts([]);
+                  }}
                   key={item.id}
-                  className="flex items-center gap-2 px-2 py-1"
+                  className="flex items-center gap-2 px-2 py-1 text-start"
                 >
                   <div className="w-12 aspect-square bg-zinc-200 rounded">
                     <img src={item.image} alt="" />
@@ -43,7 +47,7 @@ const Header = () => {
                       ? item.title.slice(0, 50) + "..."
                       : item.title}
                   </p>
-                </Link>
+                </button>
               ))}
             </div>
           </div>
