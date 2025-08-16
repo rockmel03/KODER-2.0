@@ -1,0 +1,68 @@
+{
+  "New York": {
+    "temperature": {
+      "c": 22,
+      "f": 72
+    },
+    "condition": "Partly Cloudy",
+    "humidity": 65,
+    "windSpeed": 12,
+    "visibility": 10,
+    "icon": "partly-cloudy"
+  },
+  "London": {
+    "temperature": {
+      "c": 18,
+      "f": 64
+    },
+    "condition": "Rainy",
+    "humidity": 80,
+    "windSpeed": 8,
+    "visibility": 6,
+    "icon": "rainy"
+  },
+  "Tokyo": {
+    "temperature": {
+      "c": 26,
+      "f": 79
+    },
+    "condition": "Sunny",
+    "humidity": 55,
+    "windSpeed": 5,
+    "visibility": 15,
+    "icon": "sunny"
+  },
+  "Sydney": {
+    "temperature": {
+      "c": 24,
+      "f": 75
+    },
+    "condition": "Cloudy",
+    "humidity": 70,
+    "windSpeed": 15,
+    "visibility": 12,
+    "icon": "cloudy"
+  },
+  "Paris": {
+    "temperature": {
+      "c": 20,
+      "f": 68
+    },
+    "condition": "Partly Cloudy",
+    "humidity": 60,
+    "windSpeed": 10,
+    "visibility": 8,
+    "icon": "partly-cloudy"
+  },
+  "Mumbai": {
+    "temperature": {
+      "c": 32,
+      "f": 90
+    },
+    "condition": "Thunderstorm",
+    "humidity": 85,
+    "windSpeed": 20,
+    "visibility": 5,
+    "icon": "thunderstorm"
+  }
+}
